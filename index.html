@@ -2,17 +2,25 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Kurzus Teszt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elméleti Kurzus</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #E5E5E1; color: #1E1E1E; margin: 0; padding: 40px 20px; display: flex; justify-content: center; }
+        .container { max-width: 800px; width: 100%; }
+        h1 { text-align: center; border-bottom: 3px solid #1A3B2B; padding-bottom: 10px; margin-bottom: 30px; }
+        .module-card { display: block; padding: 20px; margin-bottom: 15px; background: #FFFFFF; color: #1E1E1E; text-decoration: none; font-size: 18px; font-weight: bold; border-radius: 8px; border-left: 6px solid #1A3B2B; transition: 0.2s; }
+        .module-card:hover { background: #1A3B2B; color: #E5E5E1; }
+    </style>
 </head>
 <body>
-    <h1>Többlépcsős Kurzus Főoldal</h1>
-    <nav>
-        <ul>
-            <li><a href="modul1.html">Modul 1: Bevezetés</a></li>
-            <li><a href="modul2.html">Modul 2: Alapok</a></li>
-            <li><a href="modul3.html">Modul 3: Haladó</a></li>
-            <li><a href="modul4.html">Modul 4: Záró teszt</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1>Elméleti Kurzus</h1>
+        <div class="module-grid">
+            <a href="modul1.html" class="module-card">Modul 1: Bevezetés és Alapok</a>
+            <a href="modul2.html" class="module-card">Modul 2: Szakmai ismeretek</a>
+            <a href="modul3.html" class="module-card">Modul 3: Haladó technikák</a>
+            <a href="modul4.html" class="module-card">Modul 4: Záró teszt</a>
+        </div>
+    </div>
 </body>
 </html>

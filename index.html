@@ -5,21 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elméleti Kurzus</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #E5E5E1; color: #1E1E1E; margin: 0; padding: 40px 20px; display: flex; justify-content: center; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
         .container { max-width: 800px; width: 100%; }
-        h1 { text-align: center; border-bottom: 3px solid #1A3B2B; padding-bottom: 10px; margin-bottom: 30px; }
-        .module-card { display: block; padding: 20px; margin-bottom: 15px; background: #FFFFFF; color: #1E1E1E; text-decoration: none; font-size: 18px; font-weight: bold; border-radius: 8px; border-left: 6px solid #1A3B2B; transition: 0.2s; }
-        .module-card:hover { background: #1A3B2B; color: #E5E5E1; }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            border-bottom: 4px solid #cbff00;
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+        }
+        .module-grid { 
+            display: grid; 
+            grid-template-columns: 1fr; 
+            gap: 20px; 
+        }
+        .module-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid #000000;
+            border-radius: 8px;
+            box-shadow: 5px 5px 0px #72aabb;
+            transition: all 0.2s ease;
+        }
+        .module-card:hover {
+            background: #cbff00;
+            box-shadow: 5px 5px 0px #000000;
+            transform: translate(-2px, -2px);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Elméleti Kurzus</h1>
         <div class="module-grid">
-            <a href="modul1.html" class="module-card">Modul 1: Bevezetés és Alapok</a>
-            <a href="modul2.html" class="module-card">Modul 2: Szakmai ismeretek</a>
-            <a href="modul3.html" class="module-card">Modul 3: Haladó technikák</a>
-            <a href="modul4.html" class="module-card">Modul 4: Záró teszt</a>
+            <a href="modul1.html" class="module-card">
+                <span>Modul 1: Bevezetés és Alapok</span>
+            </a>
+            <a href="modul2.html" class="module-card">
+                <span>Modul 2: Szakmai ismeretek</span>
+            </a>
+            <a href="modul3.html" class="module-card">
+                <span>Modul 3: Haladó technikák</span>
+            </a>
+            <a href="modul4.html" class="module-card">
+                <span>Modul 4: Záró teszt</span>
+            </a>
         </div>
     </div>
 </body>
